@@ -2,12 +2,14 @@ class River
 
   attr_reader(:name)
 
-  def initialize(name, fish)
+  def initialize(name)
     @name = name
-    @fish = fish
+    @fish = []
   end
 
-  def count_fish
+  def count_fish()
     return @fish.count()
   end
+
+
 end

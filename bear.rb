@@ -11,4 +11,6 @@ class Bear
     return @stomach.count()
   end
 
+
+
 end

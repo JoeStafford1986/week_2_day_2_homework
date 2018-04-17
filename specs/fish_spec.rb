@@ -1,10 +1,10 @@
 require("minitest/autorun")
 require("minitest/rg")
 
-class RiverTest
+class FishTest
 
   def setup
-    @river = River.new("Amazon", fish)
+    @fish = Fish.new("Jim")
   end
-
+  
 end

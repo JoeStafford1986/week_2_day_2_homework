@@ -12,4 +12,8 @@ class BearTest < MiniTest::Test
     assert_equal("Jim", @bear.name())
   end
 
+  def test_count_fish_in_stomach
+    assert_equal(0, @bear.count_fish_in_stomach())
+  end
+
 end

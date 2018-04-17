@@ -11,10 +11,8 @@ class River
     return @fish.count()
   end
 
-  def add_multiple_fish(fish_stock)
-    for fish in fish_stock
-    @fish.push(fish_stock)
-  end
+  def add_fish(new_fish)
+    @fish.push(new_fish)
   end
 
 

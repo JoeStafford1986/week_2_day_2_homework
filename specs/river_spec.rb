@@ -7,7 +7,7 @@ require_relative("../fish.rb")
 class RiverTest < MiniTest::Test
 
   def setup()
-    fish = [Fish.new("Sean"), Fish.new("Pauline"), Fish.new("Marcus"), Fish.new("Craig"), Fish.new("Edith")]
+    @fish = [Fish.new("Sean"), Fish.new("Pauline"), Fish.new("Marcus"), Fish.new("Craig"), Fish.new("Edith")]
     @river = River.new("Amazon")
   end
 
@@ -17,6 +17,16 @@ class RiverTest < MiniTest::Test
 
   def test_count_fish__empty()
     assert_equal(0, @river.count_fish())
+  end
+
+  # def test_count_fish__not_empty()
+  #
+  #   assert_equal(0, @river.count_fish())
+  # end
+
+  def test_add_multiple_fish
+    @river.add_multiple_fish(@fish)
+    assert_equal(5, @river.count_fish())
   end
 
 end

@@ -15,5 +15,9 @@ class River
     @fish.push(new_fish)
   end
 
+  def lose_fish()
+    @fish.pop()
+  end
+
 
 end

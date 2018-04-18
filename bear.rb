@@ -15,10 +15,4 @@ class Bear
     @stomach << fish
   end
 
-  # def take_fish(river)
-  #
-  # end
-
-
-
 end

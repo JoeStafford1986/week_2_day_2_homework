@@ -24,14 +24,10 @@ class RiverTest < MiniTest::Test
     assert_equal(1, @river.count_fish())
   end
 
-  # def test_bequeath_fish
-  #   @river.add_fish(@fish1)
-  #   river.bequeath_fish
-  # end
-
-  # def test_add_multiple_fish
-  #   @river.add_fish(@fish1)
-  #   assert_equal(1, @river.count_fish())
-  # end
+  def test_lose_fish
+    @river.add_fish(@fish1)
+    @river.lose_fish()
+    assert_equal(0, @river.count_fish())
+  end
 
 end

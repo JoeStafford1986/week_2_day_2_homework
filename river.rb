@@ -16,7 +16,7 @@ class River
   end
 
   def lose_fish()
-    @fish.pop()
+    @fish.pop() if @fish.count != 0
   end
 
 

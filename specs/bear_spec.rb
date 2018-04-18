@@ -34,6 +34,15 @@ class BearTest < MiniTest::Test
     assert_equal(0, @river.count_fish())
   end
 
+  def test_catch_fish__river_empty()
+    #@river.add_fish(@fish)
+    fish = @river.lose_fish()
+    @bear.catch_fish(fish)
+
+    assert_equal(0, @bear.count_fish_in_stomach())
+    assert_equal(0, @river.count_fish())
+  end
+
   def test_roar
     assert_equal("Rawr", @bear.roar)
   end

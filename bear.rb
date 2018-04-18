@@ -12,7 +12,7 @@ class Bear
   end
 
   def catch_fish(fish)
-    @stomach << fish
+    @stomach << fish if fish != nil
   end
 
   def roar

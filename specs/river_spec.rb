@@ -7,7 +7,7 @@ require_relative("../fish.rb")
 class RiverTest < MiniTest::Test
 
   def setup()
-    @fish1 = Fish.new("fish_1")
+    @fish1 = Fish.new("fish")
     @river = River.new("Amazon")
   end
 
@@ -23,6 +23,11 @@ class RiverTest < MiniTest::Test
     @river.add_fish(@fish1)
     assert_equal(1, @river.count_fish())
   end
+
+  # def test_bequeath_fish
+  #   @river.add_fish(@fish1)
+  #   river.bequeath_fish
+  # end
 
   # def test_add_multiple_fish
   #   @river.add_fish(@fish1)
